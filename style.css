@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+main {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding-bottom: 2em;
+}
+
+section {
+    max-width: 350px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding: 0.5em 0em;
+}
+
+p {
+    font-weight: 400;
+    padding-bottom: 2em;
+    line-height: 1.7;
+}
+
+h1, p {
+    color: var(--transparent-white);
+}
+
+a {
+    background-color: var(--very-light-gray);
+    text-decoration: none;
+    border: 1px var(--very-light-gray) solid;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.sedans a {
+    color: var(--bright-orange);
+}
+
+.suv a {
+    color: var(--dark-cyan);
+}
+
+.luxury a {
+    color: var(--very-dark-cyan);
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.suv {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.sedans, .suv, .luxury {
+    padding: 2em 4em 3em;
+}
+
+.sedans a:hover, .suv a:hover, .luxury a:hover {
+    background-color: inherit;
+    color: var(--very-light-gray);
+}
+
+@media (min-width: 992px) {
+    section {
+        min-width: 992px;
+        display: flex;
+    }
+    .luxury, .sedans{
+        border-radius: 0;
+    }
+    .sedans {
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+    .luxury {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+   p {
+       padding-bottom: 5em;
+   }
+}
