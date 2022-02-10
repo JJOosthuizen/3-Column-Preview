@@ -21,11 +21,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.PNG)
+![](./screenshot.png)
 
 ### Links
 
-- Live Site URL: [Live Site Preview](https://your-live-site-url.com)
+- Live Site URL: [Live Site Preview](https://joos-3-column-preview.netlify.app/)
 ### Built with
 
 - Semantic HTML5 markup
