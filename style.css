@@ -20,7 +20,8 @@ main {
     align-items: center;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-    padding-bottom: 2em;
+    padding: 2em 0em;
+
 }
 
 section {
@@ -68,8 +69,8 @@ a {
 
 .sedans {
     background-color: var(--bright-orange);
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .suv {
@@ -78,8 +79,8 @@ a {
 
 .luxury {
     background-color: var(--very-dark-cyan);
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .sedans, .suv, .luxury {
@@ -89,6 +90,10 @@ a {
 .sedans a:hover, .suv a:hover, .luxury a:hover {
     background-color: inherit;
     color: var(--very-light-gray);
+}
+
+.attribution {
+    padding-bottom: 2em;
 }
 
 @media (min-width: 992px) {
